@@ -140,7 +140,7 @@ html, body {
     opacity: 0.93;
 }
 
-.about .description {
+.about .wrapper {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -190,6 +190,43 @@ html, body {
     justify-content: space-around;
     height: 50px;
     width: 100%;
+}
+
+
+/* skills section */
+
+
+/* resume section */
+
+.resume {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("images/myResume.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/* education section */
+
+.education {
+    height: 100%;
+    width: 100%;
+    background-image: url("images/lehman.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.education .wrapper {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(236, 134, 78, 0.7);
 }
 
 
