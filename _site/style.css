@@ -135,7 +135,7 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #83AF9B
+    background-color: #83AF9B;
 }
 
 .about .header {
@@ -143,7 +143,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .about .pic {
@@ -153,6 +153,7 @@ html, body {
     align-items: center;
     justify-content: center;
     padding-bottom: 25px;
+    border-style: dashed;
 }
 
 .about .circle {
@@ -166,12 +167,13 @@ html, body {
 
 .about .body {
     height: 50%;
-    width: 550px;
+    width: 50%;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     font-size: 22px;
+    overflow-x: scroll;
 }
 
 .about .footer {
