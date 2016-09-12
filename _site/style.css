@@ -97,12 +97,12 @@ html, body {
     width: 7em;
     line-height: 7em;
     border-radius: 50%;
-    border: 5px solid rgba(0, 0, 0, 0.1);
+    border: 5px solid rgba(204, 224, 259, 0.1);
 }
 
 .main .circle:hover {
     background-color: transparent;
-    border: 5px solid rgba(204, 224, 259, 0.1);
+    border: 5px solid rgba(236, 134, 78, 0.7);
     font-size: 20px;
     color: white;
 }
