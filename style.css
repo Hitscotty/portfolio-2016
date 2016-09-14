@@ -1,7 +1,5 @@
 html, body {
     font-family: 'Open Sans Condensed', sans-serif;
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -10,69 +8,37 @@ html, body {
 /* main section */
 
 .main {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     background: url("images/background.jpg") no-repeat center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
-.main .me {
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
+.header {
+    height: 100vh;
+}
+
+.main .header {
     background-image: url("images/mainBackground.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 10px;
+    background-size: cover;
     opacity: 0.93;
 }
 
-.main .me p {
-    font-size: 120px;
-    opacity: 0.3;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    color: transparent;
-    background-color: transparent;
-    max-width: 90%;
-}
-
 .main .selection {
-    padding-top: 40px;
-    border-right: 0;
-    border-left: 0;
-    width: 100%;
-    height: 25%;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.main .selection ul {
-    top: 0;
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.main .selection ul li {
-    display: inline;
-    padding: 90px;
-    float: left;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.main .selection .center {
+    width: 100vh;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    color: red;
 }
 
 .main a {
@@ -81,15 +47,8 @@ html, body {
     border-radius: 50%;
 }
 
-.spacer {
-    height: 30%;
-    position: relative;
-    z-index: 1;
-}
-
 .circle {
     display: flex;
-    position: absolute;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -120,26 +79,11 @@ html, body {
 /* about section */
 
 .about {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    opacity: 0.93;
-}
-
-.about .wrapper {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 100vh;
     background-color: #83AF9B;
 }
 
 .about .header {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,7 +96,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 25px;
+    border: 5px green solid;
 }
 
 .about .circle {
@@ -164,15 +108,13 @@ html, body {
     border: 5px solid lightcoral;
 }
 
-.about .body {
-    height: 50%;
-    width: 50%;
+.about .bio {
+    width: 60vw;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     text-align: center;
-    font-size: 22px;
-    overflow-x: scroll;
+    font-size: 2vw;
 }
 
 .about .footer {
@@ -186,13 +128,13 @@ html, body {
 /* skills section */
 
 
-/* resume section */
+/* resuheader section */
 
 .resume {
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     background-image: url("images/myResume.png");
     background-repeat: no-repeat;
@@ -204,17 +146,13 @@ html, body {
 /* education section */
 
 .education {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
     background-image: url("images/lehman.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
 }
 
 .education .wrapper {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
     text-align: center;
     background-color: rgba(236, 134, 78, 0.7);
 }
