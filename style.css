@@ -28,7 +28,6 @@ html, body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -36,7 +35,14 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: auto;
+}
+
+.main .selection #top {
+    margin-top: 50px;
+}
+
+.main .selection #bot {
+    margin-top: 135px;
 }
 
 .main a {
@@ -50,9 +56,9 @@ html, body {
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    height: 10vh;
-    width: 10vh;
-    line-height: 10vh;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
     border-radius: 50%;
     border: 5px solid rgba(204, 224, 259, 0.1);
     margin: 50px;
@@ -83,10 +89,13 @@ html, body {
         background-size: cover;
     }
     .main .selection .center {
-        width: 5px;
+        width: 50px;
     }
     .main .circle {
         margin: 10px;
+    }
+    .main .selection .center {
+        margin: auto;
     }
 }
 
@@ -104,20 +113,22 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    overflow-x: scroll;
+    border: 2px red dotted;
 }
 
 .about .pic {
-    height: 40vh;
-    width: 20vw;
+    height: 290px;
+    width: 290px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 5px green solid;
+    border: 2px red dotted;
 }
 
 .about .circle {
-    height: 12em;
-    width: 12em;
+    height: 200px;
+    width: 300px;
     background-image: url("images/profilepic.jpg");
     background-position: center;
     background-size: cover;
@@ -125,19 +136,21 @@ html, body {
 }
 
 .about .bio {
-    width: 60vw;
+    width: 70vw;
+    height: 30vh;
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.2em;
+    border: 2px red dotted;
 }
 
 .about .footer {
     display: flex;
     justify-content: space-around;
-    height: 50vh;
-    width: 100vw;
+    width: 100%;
+    border: 2px red dotted;
 }
 
 
@@ -173,5 +186,7 @@ html, body {
     background-color: rgba(236, 134, 78, 0.7);
 }
 
+
+}
 
 }
